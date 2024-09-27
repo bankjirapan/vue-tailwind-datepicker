@@ -14,6 +14,7 @@ import isToday from 'dayjs/plugin/isToday'
 import isBetween from 'dayjs/plugin/isBetween'
 import duration from 'dayjs/plugin/duration'
 import weekOfYear from 'dayjs/plugin/weekOfYear'
+import buddhistEra from "dayjs/plugin/buddhistEra";
 import type { Ref } from 'vue'
 import {
   computed,
@@ -157,6 +158,7 @@ dayjs.extend(isToday)
 dayjs.extend(isBetween)
 dayjs.extend(duration)
 dayjs.extend(weekOfYear)
+dayjs.extend(buddhistEra)
 
 const VtdRef = ref(null)
 const VtdInputRef = ref<HTMLInputElement | null>(null)
